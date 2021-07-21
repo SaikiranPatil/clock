@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+    position: absolute;
+}
+body{
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient(circle at center center, rgb(220,214,214) 0%, rgb(220,214,214) 15%,rgba(160,155,155, 0.73) 15%, rgba(160,155,155, 0.73) 34%,rgba(178,178,178, 0.71) 34%, rgba(178,178,178, 0.71) 51%,rgba(237,237,237, 0.52) 51%, rgba(237,237,237, 0.52) 75%,rgba(138,138,138, 0.33) 75%, rgba(138,138,138, 0.33) 89%,rgba(158,158,158, 0.99) 89%, rgba(158,158,158, 0.99) 100%),radial-gradient(circle at center center, rgb(214,211,211) 0%, rgb(214,211,211) 6%,rgb(214,211,211) 6%, rgb(214,211,211) 12%,rgb(214,211,211) 12%, rgb(214,211,211) 31%,rgb(214,211,211) 31%, rgb(214,211,211) 92%,rgb(214,211,211) 92%, rgb(214,211,211) 97%,rgb(214,211,211) 97%, rgb(214,211,211) 100%); background-size: 100px 100px;
+}
+.clock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    border: 25px solid black;
+    text-shadow: 2px 3px 5px grey;
+    box-shadow: 15px 10px 50px inset rgb(44, 44, 44),-5px -5px 10px rgb(44, 44, 44) ;
+    background: white;
+}
+.number{
+    transform-origin: 250px ;
+    position: absolute;
+    transform-origin: center 230px;
+    width: 75px;
+    text-align: center;
+    font-size: 4rem;
+    font-family: 'Poppins', sans-serif;
+}
+.nametag{
+    font-family: 'Oxygen', sans-serif;
+    font-size: 2rem;
+    opacity: 0.95;
+    transform: translate(0,-75px);
+    z-index: -2;
+    font-weight: 500;
+}
+.bar{
+    background: black;
+    height: 10px;
+    width: 3px;
+    position: absolute;
+    transform-origin: center -210px;
+    /* box-shadow: 1px 1px 3px gray; */
+}
+.circle{
+    border: 1px solid black;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: black;
+}
+
+#circle2{
+    border:0.1px solid rgb(133, 129, 129);
+    height: 15px;
+    width: 15px;
+    /* box-shadow: 1px 1px gray; */
+}
+
+.hand{
+    background: black;
+    box-shadow: 5px 5px 1px  rgb(48, 48, 48);
+}
+#h-hand{
+    width: 10px;
+    height: 175px;
+    transform-origin: center 50px;
+}
+#m-hand{
+    width: 8px;
+    height: 240px;
+    transform-origin: center 50px;
+}
+#s-hand{
+    width: 3px;
+    height: 250px;
+    transform-origin: center 50px;
+}
