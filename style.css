@@ -11,7 +11,7 @@ body{
     align-items: center;
     background-image: radial-gradient(circle at center center, rgb(220,214,214) 0%, rgb(220,214,214) 15%,rgba(160,155,155, 0.73) 15%, rgba(160,155,155, 0.73) 34%,rgba(178,178,178, 0.71) 34%, rgba(178,178,178, 0.71) 51%,rgba(237,237,237, 0.52) 51%, rgba(237,237,237, 0.52) 75%,rgba(138,138,138, 0.33) 75%, rgba(138,138,138, 0.33) 89%,rgba(158,158,158, 0.99) 89%, rgba(158,158,158, 0.99) 100%),radial-gradient(circle at center center, rgb(214,211,211) 0%, rgb(214,211,211) 6%,rgb(214,211,211) 6%, rgb(214,211,211) 12%,rgb(214,211,211) 12%, rgb(214,211,211) 31%,rgb(214,211,211) 31%, rgb(214,211,211) 92%,rgb(214,211,211) 92%, rgb(214,211,211) 97%,rgb(214,211,211) 97%, rgb(214,211,211) 100%); background-size: 100px 100px;
 }
-.clock{
+#clock{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,7 +46,6 @@ body{
     width: 3px;
     position: absolute;
     transform-origin: center -210px;
-    /* box-shadow: 1px 1px 3px gray; */
 }
 .circle{
     border: 1px solid black;
@@ -60,7 +59,6 @@ body{
     border:0.1px solid rgb(133, 129, 129);
     height: 15px;
     width: 15px;
-    /* box-shadow: 1px 1px gray; */
 }
 
 .hand{
