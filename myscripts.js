@@ -65,8 +65,6 @@ setInterval(() => {
     hand = document.getElementsByClassName("hand");
     let x = 5 * Math.cos((ang(second) * 30) / (2 * Math.PI));
     let y = 5 * Math.sin((ang(second) * 30) / (2 * Math.PI));
-    // hand.style.box-shadow = x + "px " + y + "px 1px  rgb(48, 48, 48)";
-    // hand.style.box-shadow = "2px 2px 1px  rgb(48, 48, 48)";
 
     var audio = new Audio('clock.mp3');
     audio.play();
