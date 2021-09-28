@@ -4,6 +4,23 @@ let a = 175;
 
 ang = angle => angle * Math.PI / 180
 
+str = "";
+for (let i = 1; i <= 12; i++) {
+    str += `<div class="number" id="` + i + `"></div>`
+}
+
+str += `  <div class="hand" id="h-hand"></div>
+<div class="hand" id="m-hand"></div>
+<div class="hand" id="s-hand"></div>
+<div class="circle" id="circle1"></div>
+<div class="circle" id="circle2"></div>
+<div class="nametag">TITAN</div>`;
+
+for (let i = 1; i <= 60; i++) {
+    str += `<div class="bar" id="bar` + i + `"></div>`
+}
+
+clock.innerHTML = str;
 
 for (let i = 1; i <= 12; i++) {
     let n = String(i);
